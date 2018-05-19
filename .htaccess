@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(mastodon\.pl)$ [NC]
+RewriteRule ^ https://joinmastodon.org/ [R=302,L,NE]
